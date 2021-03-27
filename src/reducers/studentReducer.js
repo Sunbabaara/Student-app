@@ -1,7 +1,6 @@
-import React from 'react'
 
 function studentReducer(state, action) {
-    const {name, level, date, indexNo}=action.payload;
+ 
     switch (action.type){
         case "ADDSTUDENT":
         const {name, level, date, indexNo}=action.payload;
