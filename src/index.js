@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import StudentContextProvider from './context/StudentContext'
+import "./bootstrap.min.css"
 
 ReactDOM.render(
   <React.StrictMode>

@@ -12,12 +12,12 @@ function AddStudent() {
     dispatch({type:"ADDSTUDENT", payload:{name,level,date,indexNo}});
 }
     return (
-        <form onSubmit={onsubmit}>
+        <form onSubmit={onsubmit} className="card" style={{display:"flex", border:"1px solid red",margin:"20px", width:"500px", color:"white", marginTop:"10px"}}>
           <input type="text" placeholder="student name" onChange={(e)=>setName(e.target.value)}/>
           <input type="number" placeholder="student level" onChange={(e)=>setLevel(e.target.value)}/>
           <input type="date" placeholder="exeat date" onChange={(e)=>setDate(e.target.value)}/>
           <input type="text" placeholder="index number" onChange={(e)=>setIndexNo(e.target.value)}/>  
-          <button>ADD</button>
+          <button className="fun">ADD</button>
         </form>
     );
 }
